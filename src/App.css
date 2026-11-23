@@ -1,0 +1,398 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.login-page {
+  min-height: 100vh;
+  background: #f5f0e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.login-card {
+  background: #fffdf9;
+  width: 100%;
+  max-width: 440px;
+  padding: 45px 38px;
+  text-align: center;
+  border: 1px solid #e8ddca;
+  box-shadow: 0 15px 50px rgba(80, 60, 30, 0.08);
+}
+
+.login-ornament {
+  font-size: 28px;
+  color: #b69a68;
+  margin-bottom: 15px;
+}
+
+.admin-label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #a58b60;
+  font-weight: 700;
+}
+
+.login-card h1,
+.admin-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #554a3d;
+  margin: 15px 0 5px;
+}
+
+.login-card h1 span {
+  color: #b69a68;
+  font-style: italic;
+}
+
+.login-subtitle {
+  color: #a58b60;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+.login-divider {
+  color: #b69a68;
+  margin: 30px 0;
+}
+
+.login-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #554a3d;
+}
+
+.login-description {
+  font-size: 13px;
+  color: #8b8175;
+  margin-bottom: 28px;
+}
+
+.login-card form {
+  text-align: left;
+}
+
+.login-card label {
+  display: block;
+  font-size: 11px;
+  color: #887653;
+  font-weight: 700;
+  margin: 16px 0 9px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ded3c1;
+  background: white;
+  outline: none;
+  font-size: 13px;
+}
+
+.login-card input:focus {
+  border-color: #b69a68;
+}
+
+.login-card button,
+.logout-button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 22px;
+  border: none;
+  background: #806c4e;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.login-card button:hover,
+.logout-button:hover {
+  background: #635237;
+}
+
+.login-error {
+  margin-top: 15px;
+  padding: 12px;
+  background: #fbeaea;
+  color: #a33;
+  font-size: 12px;
+}
+
+.login-footer {
+  margin-top: 35px;
+  color: #b69a68;
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+
+.loading {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: #806c4e;
+}
+
+.admin-page {
+  min-height: 100vh;
+  background: #f5f0e8;
+}
+
+.admin-header {
+  background: #fffdf9;
+  padding: 25px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e8ddca;
+}
+
+.admin-header h1 {
+  margin: 8px 0 0;
+}
+
+.admin-header .logout-button {
+  width: auto;
+  margin: 0;
+  padding: 12px 25px;
+}
+
+.admin-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 45px 25px;
+}
+
+.admin-welcome {
+  color: #a58b60;
+  font-size: 13px;
+}
+
+.admin-content h2,
+.dashboard-placeholder h3 {
+  font-family: 'Playfair Display', serif;
+  color: #554a3d;
+  font-weight: 400;
+}
+
+.admin-content > p {
+  color: #8b8175;
+  font-size: 14px;
+}
+
+.dashboard-placeholder {
+  margin-top: 35px;
+  padding: 45px 25px;
+  background: #fffdf9;
+  border: 1px solid #e8ddca;
+  text-align: center;
+}
+
+.placeholder-icon {
+  color: #b69a68;
+  font-size: 30px;
+}
+
+.dashboard-placeholder p {
+  color: #8b8175;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 40px 25px;
+  }
+
+  .admin-header {
+    padding: 20px;
+  }
+
+  .admin-header h1 {
+    font-size: 25px;
+  }
+}
+
+/* DASHBOARD MANAGEMENT */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.stat-card {
+  background: #fffdf9;
+  border: 1px solid #e8ddca;
+  padding: 22px;
+}
+
+.stat-card span {
+  display: block;
+  font-size: 12px;
+  color: #8b8175;
+  margin-bottom: 10px;
+}
+
+.stat-card strong {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #806c4e;
+}
+
+.management-card {
+  background: #fffdf9;
+  border: 1px solid #e8ddca;
+  padding: 30px;
+  margin: 25px 0;
+}
+
+.management-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: #554a3d;
+  font-size: 23px;
+  margin-top: 0;
+}
+
+.management-card form label {
+  display: block;
+  margin: 18px 0 8px;
+  color: #806c4e;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.management-card form input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ded3c1;
+  background: white;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+}
+
+.management-card form input:focus {
+  border-color: #b69a68;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.form-actions button,
+.refresh-button {
+  padding: 13px 20px;
+  margin-top: 22px;
+  border: none;
+  background: #806c4e;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.form-actions button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.form-actions .cancel-button {
+  background: #aaa092;
+}
+
+.form-message {
+  margin-top: 15px;
+  padding: 12px;
+  background: #f5f0e8;
+  color: #806c4e;
+  font-size: 13px;
+}
+
+.list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.refresh-button {
+  margin: 0;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.invitation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 13px;
+  text-align: left;
+}
+
+.invitation-table th {
+  background: #f5f0e8;
+  color: #806c4e;
+  font-weight: 600;
+}
+
+.invitation-table th,
+.invitation-table td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #e8ddca;
+  white-space: nowrap;
+}
+
+.table-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.table-actions button {
+  padding: 7px 11px;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.edit-button {
+  background: #e8ddca;
+  color: #635237;
+}
+
+.delete-button {
+  background: #f5e5e2;
+  color: #a34d42;
+}
+
+@media (max-width: 700px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .management-card {
+    padding: 20px 15px;
+  }
+
+  .admin-content {
+    padding: 30px 15px;
+  }
+}
